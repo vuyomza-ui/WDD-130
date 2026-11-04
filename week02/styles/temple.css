@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #111;
@@ -14,17 +15,18 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 1px 0;
+    padding: 10px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    font-weight: normal;
+    font-size: 10px;
+    font-weight: center;
 }
 
 main {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 1px 0 8px;
 }
@@ -45,14 +47,14 @@ main img {
 }
 
 section {
-    margin: 0 0 22px;
+    margin: 20px 0;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 10px;
     background-color: #ddd;
     font-size: .9rem;
 }
 
-ection h2 {
+section h2 {
     font-size: 1.4rem;
     border-bottom: 1px solid #555;
     padding-bottom: 5px;
@@ -60,17 +62,17 @@ ection h2 {
 
 section p,
 section li {
-    line-height: 1.6;
+    margin: 10px;
 }
 
 section ul {
-    padding-left: 24px;
+    margin: 10px;
 }
 
 footer {
     text-align: center;
-    font-size: 1.1rem;
-    padding: 1px 0;
+    font-size: .9rem;
+    padding: 1px;
     background-color: #333;
     color: white;
 }
