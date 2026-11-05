@@ -45,6 +45,10 @@ main img {
     margin: 20rem 20rem;
 }
 
+main h1 {
+    position: center;
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
