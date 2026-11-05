@@ -37,7 +37,7 @@ img {
 
 p {
     padding: 25px;
-    font-style: arial, roboto;
+    font-style: arial;
 }
 
 main {
@@ -83,14 +83,14 @@ footer {
     text-align: center;
 }
 
-/* Class Selectors 
+/* Class Selectors*/
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0.1);
     padding: 1rem;
     background-color: #333;
     color: white;
-    position: middle;
+    position: center;
 }
 
 main img {
