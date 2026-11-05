@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body,
+h1 {
+    font-size: 200px;
+    color: blue;
+    position: center;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;

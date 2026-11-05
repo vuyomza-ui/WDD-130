@@ -9,6 +9,13 @@ body {
     line-height: 1.6;
 }
 
+body,
+h1 {
+    font-size: 200px;
+    color: blue;
+    position: center;
+}
+
 header,
 footer {
     background-color: #333;
