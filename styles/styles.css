@@ -39,10 +39,10 @@ main {
 }
 
 main img {
-    width: 150px;
+    width: 100px;
     height: auto;
     float: right;
-    margin: 20rem 20rem;
+    margin: 1rem 1rem;
 }
 
 main h1 {
@@ -60,8 +60,8 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 55px;
-    left: 200px;
+    top: 40px;
+    left: 100px;
 }
 
 aside img {
@@ -76,7 +76,7 @@ footer {
     text-align: center;
 }
 
-/* Class Selectors */
+/* Class Selectors 
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0.1);
