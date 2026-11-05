@@ -22,11 +22,6 @@ nav a {
     padding: 20px;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-}
-
 img {
     width: 150px;
     height: auto;
@@ -49,11 +44,7 @@ main img {
     width: 100px;
     height: auto;
     float: right;
-    margin: 1rem 1rem;
-}
-
-main h1 {
-    position: center;
+    margin: 0 0 1rem 1rem;
 }
 
 aside {
