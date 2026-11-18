@@ -1,0 +1,413 @@
+:root {
+    --primary-color: #064663;
+    --secondary-color: #0b8fa3;
+    --accent1-color: #e9f5f7;
+    --accent2-color: #f4a261;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    gap: 30px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+header nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(6, 70, 99, 0.8);
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+/* HISTORY SECTION */
+.history {
+    padding: 35px 20px;
+    margin-bottom: 40px;
+    background-color: var(--accent1-color);
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.history-content p {
+    padding: 15px;
+}
+
+.history-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.adventures {
+    padding: 35px 10px;
+    margin-bottom: 40px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 8px 2px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 30px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 750px) {
+
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 15px;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    .adventure-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .hero article {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .hero > img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .adventure-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CONTACT PAGE */
+.contact-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.contact-page h1 {
+    text-align: center;
+    color: #055a8c;
+    margin-bottom: 30px;
+}
+
+.contact-page h2 {
+    text-align: center;
+    color: #055a8c;
+    margin-bottom: 20px;
+}
+
+/* COMPANY INFORMATION */
+.company-info {
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.map iframe {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ccc;
+}
+
+/* EMPLOYEE PROFILES */
+.employees {
+    margin-bottom: 40px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+}
+
+.employee-gallery figure {
+    flex: 1;
+}
+
+.employee-gallery img {
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.form-item textarea {
+    resize: vertical;
+}
+
+.contact-form fieldset {
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.contact-form fieldset label {
+    display: block;
+    margin: 10px 0;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.newsletter {
+    margin: 10px 0;
+}
+
+.contact-form button {
+    background-color: #055a8c;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #003b5c;
+}
+
+/* CONTACT PAGE MOBILE LAYOUT */
+@media screen and (max-width: 700px) {
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-gallery figure {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
