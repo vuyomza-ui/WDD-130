@@ -306,8 +306,8 @@ footer p {
 
 .employee-gallery img {
     width: 100%;
-    max-width: 220px;
-    height: 180px;
+    max-width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 8px;
 }
