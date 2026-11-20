@@ -43,6 +43,11 @@ article {
     text-decoration: none;
 }
 
+.socialmedia a img {
+    width: 40px;
+    height: 40px;
+}
+
 .hero {
     position: relative;
 }
