@@ -54,14 +54,14 @@ article {
 
 .hero img {
     display: block;
-    width: 25%;
+    width: 100%;
     height: auto;
 }
 
 h1 {
     position: absolute;
     top: 20px;
-    width: 25%;
+    width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
